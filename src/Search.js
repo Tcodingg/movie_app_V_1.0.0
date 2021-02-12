@@ -10,10 +10,6 @@ export default function Search() {
 	const queryInput = useSelector((state) => state.getMovie);
 	const images = 'https://image.tmdb.org/t/p/w500';
 
-	// function handleClick() {
-	// 	console.log(movie);
-	// }
-
 	useEffect(() => {
 		const fetchsearch = async () => {
 			const {
@@ -24,7 +20,7 @@ export default function Search() {
 					query: queryInput,
 				},
 			});
-			setMovieSearch(results);
+			setMovieSearch(() => results.filter((img) => img.poster_path !== null));
 		};
 		fetchsearch();
 		console.log(movieSearch);
