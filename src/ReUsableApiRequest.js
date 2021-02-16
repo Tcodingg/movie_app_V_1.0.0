@@ -26,7 +26,7 @@ const ReUsableApiRequest = (props) => {
 		<div className='movieContent'>
 			{movieInfo.map((movie) => {
 				return (
-					<Link key={movie.id} to={`/details/${movie.id}`}>
+					<Link key={movie.id} to={`/movie_app_V_1.0.0/details/${movie.id}`}>
 						<img
 							className='images'
 							src={`${images}${movie.poster_path}`}
