@@ -1,7 +1,8 @@
-{ "homepage": "http://tcodingg.github.io/movie_app_V_1.0.0",
+{
   "name": "movie_app_v_1.0",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tcodingg.github.io/movie_app_V_1.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -10,15 +11,17 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
+    "server": "^1.0.31",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
