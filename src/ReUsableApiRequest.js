@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ReUsableApiRequest = (props) => {
 	const API_KEY = process.env.REACT_APP_MOVIEDB_API_KEY;
 
-	const pagesUrl = `https://api.themoviedb.org/3/search/movie?query=Avengers&api_key=${API_KEY}&page=1`;
+	// const pagesUrl = `https://api.themoviedb.org/3/search/movie?query=Avengers&api_key=${API_KEY}&page=1`;
 
 	const [movieInfo, setMovieInfo] = useState([]);
 	const images = 'https://image.tmdb.org/t/p/w500';
@@ -19,7 +19,7 @@ const ReUsableApiRequest = (props) => {
 			setMovieInfo(() => results.filter((img) => img.poster_path !== null));
 		}
 		fetch();
-		console.log(movieInfo);
+		// console.log(movieInfo);
 	}, []);
 
 	return (

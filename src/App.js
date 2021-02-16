@@ -1,12 +1,9 @@
 import './App.css';
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import ReUsableApiRequest from './ReUsableApiRequest';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Main from './Main';
 
 import Detail from './Detail';
-import Popular from './Popular';
 import Search from './Search';
 import Home from './Home';
 

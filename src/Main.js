@@ -23,7 +23,12 @@ function Main() {
 	const disptch = useDispatch();
 
 	return (
-		<div>
+		<div className='header'>
+			{/* <h1>
+				<a href='/'>
+					<span style={{ color: 'red' }}>Your</span> Home Theatre
+				</a>
+			</h1> */}
 			<input
 				placeholder='Search...'
 				onKeyDown={handleKeydown}

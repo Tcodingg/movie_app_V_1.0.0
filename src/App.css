@@ -4,9 +4,11 @@
 	box-sizing: border-box;
 	scrollbar-width: none;
 	-moz-appearance: none !important;
-	color: rgb(202, 53, 53);
 }
-
+body {
+	color: white;
+	background: black;
+}
 .content-wrapper {
 	background: black;
 	display: flex;
@@ -52,31 +54,216 @@
 	/* display: flex;
 	justify-content: center;  */
 }
+/*------------------search-and- details- container-------*/
+.details-container {
+	/* display: none; */
+	width: 70%;
+	height: 100vh;
+	padding: 30px;
+}
+.details-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.details-wrapper img {
+	width: 250px;
+	height: 380px;
+	border-radius: 5px;
+	/* padding: 10px 0; */
+}
+
+.img-description {
+	/* background: red; */
+}
+.details-wrapper h2 {
+	/* background: red; */
+	padding-bottom: 10px;
+}
+
+.details-wrapper p {
+	padding-top: 10px;
+	width: 70%;
+}
+
+.year-rating {
+	line-height: 10px;
+	margin-bottom: 10px;
+}
+.header {
+	width: 100%;
+}
+.header a {
+	text-decoration: none;
+	text-shadow: none;
+	text-align: center;
+	font-size: 40px;
+
+	display: block;
+	color: white;
+	margin-top: 20px;
+}
+.header input {
+	display: block;
+	margin: 20px auto;
+
+	width: 70%;
+	height: 35px;
+	font-size: 16px;
+	border-radius: 50px;
+	padding: 10px;
+	outline: none;
+}
+
+.movie-content h1 {
+	margin: 30px 0 10px 30px;
+}
+.movieContent {
+	height: auto;
+}
+
+/*------------Home------------*/
+.home-banner {
+	display: flex;
+	flex-direction: row;
+	border-top: 8px solid #222;
+	border-bottom: 8px solid #222;
+	margin: 30px 0;
+	/* padding: 20px; */
+	justify-content: flex-end;
+	align-items: center;
+}
+.home-banner div {
+	width: 50%;
+}
+
+.enjoy-your-tv {
+	display: flex;
+	flex-direction: column;
+	padding-left: 13%;
+}
+.enjoy-your-tv h1 {
+	font-size: 50px;
+}
+.enjoy-your-tv p {
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.img-container {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.img-container img {
+	width: 70%;
+	height: 70%;
+	margin-right: 13%;
+}
 
 @media (max-width: 836px) {
 	.movieContent {
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		/* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		background: red; */
+		margin: 0;
 	}
 	.images {
 		width: 200px;
 		height: 300px;
-		background: red;
+		/* background: red; */
 	}
-}
+	.home-banner {
+		/* flex-direction: column; */
+	}
 
-@media (max-width: 468px) {
-	.movieContent {
-		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	.enjoy-your-tv h1 {
+		font-size: 30px;
 	}
-	.images {
-		width: 150px;
-		height: 200px;
-		background: red;
+	.enjoy-your-tv p {
+		font-size: 20px;
+		margin-top: 10px;
 	}
-}
 
-.detail {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@media (max-width: 468px) {
+		.movieContent {
+			grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		}
+		.images {
+			width: 150px;
+			height: 200px;
+			/* background: red; */
+		}
+		.movie-content h1 {
+			font-size: 25px;
+		}
+		.detail {
+			display: flex;
+
+			justify-content: center;
+			align-items: center;
+		}
+		.details-container {
+			margin: 0;
+			padding: 0;
+
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 100%;
+		}
+		.details-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 100%;
+		}
+		.details-wrapper h2 {
+			text-align: center;
+			font-size: 16px;
+
+			width: 100%;
+		}
+
+		.img-description {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.img-description p {
+			font-size: 14;
+		}
+		.year-rating {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+
+			width: 100%;
+		}
+		.home-banner {
+			flex-direction: column;
+			width: 100%;
+
+			padding: 0;
+			margin: 0;
+		}
+		.home-banner div {
+			width: 100%;
+		}
+		.enjoy-your-tv {
+			padding: 20px;
+			margin: 0;
+			width: 100%;
+			text-align: center;
+
+			margin-top: 30px;
+		}
+	}
 }

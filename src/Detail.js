@@ -16,14 +16,22 @@ export default function Detail({ match }) {
 			`https://api.themoviedb.org/3/movie/${match.params.id}?api_key=${API_KEY}`
 		);
 		setMovieDetails(data);
-		console.log(data);
+		// console.log(data);
 	};
 
 	return (
-		<div key={movieDetals.id}>
-			<h1>{movieDetals.title}</h1>
-			<p>{movieDetals.overview}</p>
-			<img src={`${images}${movieDetals.poster_path}`}></img>
+		<div className='details-container'>
+			<div className='details-wrapper' key={movieDetals.id}>
+				<h2>{movieDetals.title}</h2>
+				<div className='img-description'>
+					<img src={`${images}${movieDetals.poster_path}`} alt='none'></img>
+					<div className='year-rating'>
+						<p>Rating: {movieDetals.vote_average}</p>
+						<p>Year: {movieDetals.release_date}</p>
+					</div>
+					<p>{movieDetals.overview}</p>
+				</div>
+			</div>
 		</div>
 	);
 }
