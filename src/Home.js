@@ -9,14 +9,14 @@ export default function Home() {
 	return (
 		<div>
 			<div className='home-banner'>
-				<div class='enjoy-your-tv'>
+				<div className='enjoy-your-tv'>
 					<h1>Enjoy Your TV.</h1>
 					<p>
 						Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
 						players, and more.
 					</p>
 				</div>
-				<div class='img-container'>
+				<div className='img-container'>
 					<img src={tv} />
 				</div>
 			</div>
