@@ -14,8 +14,8 @@ function App() {
 				<Main />
 				<Switch>
 					<Route path='/movie_app_V_1.0.0/' exact component={Home} />
-					<Route path='/search' component={Search} />
-					<Route path='/details/:id' component={Detail} />
+					<Route path='/movie_app_V_1.0.0/search' component={Search} />
+					<Route path='/movie_app_V_1.0.0/details/:id' component={Detail} />
 				</Switch>
 			</Router>
 		</div>
