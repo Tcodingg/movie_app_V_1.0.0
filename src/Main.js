@@ -15,7 +15,7 @@ function Main() {
 	function handleKeydown(e) {
 		if (e.key === 'Enter' && inputVal.length > 0) {
 			disptch(movieName(inputVal));
-			history.push('/search');
+			history.push('/movie_app_V_1.0.0/search');
 			console.log(inputVal);
 		}
 	}
