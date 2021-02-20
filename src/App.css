@@ -188,12 +188,20 @@ body {
 
 	@media (max-width: 468px) {
 		.movieContent {
-			grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+			/* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
 		}
+
 		.images {
-			width: 150px;
-			height: 200px;
+			width: 100px;
+			height: 150px;
 			/* background: red; */
+		}
+		.movie-content {
+			/* background: red; */
+		}
+
+		.content-wrapper {
+			background: blue;
 		}
 		.movie-content h1 {
 			font-size: 25px;
